@@ -9,6 +9,15 @@ export interface ProjectItem {
 
 export const projects: ProjectItem[] = [
 	{
+		image: "/placeholder-1.jpg",
+		title: "Solvex — Skill Constellation Platform",
+		description:
+			"A MERN-stack developer learning tracker that visualises your skills as a dynamic D3 force-directed constellation. Log learning events, sync GitHub repos to auto-detect skills and earn XP, create community learning trails, and watch your star map grow. Features a Valorant-inspired dark UI with region-reactive themes, skill distribution chart, and GitHub PAT integration.",
+		techStack: ["React", "Vite", "D3.js", "Node.js", "Express", "MongoDB", "Framer Motion", "Zustand"],
+		deployedUrl: "https://github.com/XAgentso/Slovex",
+		githubUrl: "https://github.com/XAgentso/Slovex",
+	},
+	{
 		image: "/weather-app.png",
 		title: "Weather App — NASA Climate Dashboard",
 		description:
