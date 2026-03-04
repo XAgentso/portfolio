@@ -1,79 +1,57 @@
 import { SLogoIcon } from "@/components/icons/s-logo-icon";
-import { type CSSProperties, useMemo } from "react";
 import Section from "@/components/layout/section";
-import { Marquee } from "@/components/ui/marquee";
-import { cn } from "@/lib/utils";
-import TestimonialCard from "@/sections/testimonials/_components/testimonials-card";
-import {
-	type TestimonialType,
-	testimonials,
-} from "@/sections/testimonials/_constants/testimonials";
-
-const columnVisibility = ["block", "hidden md:block", "hidden lg:block"];
-const columnKeys = [
-	"testimonials-primary",
-	"testimonials-secondary",
-	"testimonials-tertiary",
-];
-const animationDurations = ["28s", "34s", "30s"];
-const fallbackVisibility = columnVisibility[columnVisibility.length - 1];
-
-const createColumns = (items: TestimonialType[], columnCount = 3) =>
-	Array.from({ length: columnCount }, (_, columnIndex) => {
-		const offset = (columnIndex * 2) % items.length;
-		return [...items.slice(offset), ...items.slice(0, offset)];
-	});
+import { internships } from "@/sections/testimonials/_constants/testimonials";
 
 export default function Testimonials() {
-	const columns = useMemo(() => createColumns(testimonials), []);
-
 	return (
 		<Section
 			id="testimonials"
-			title="Kind words from mentors & collaborators"
-			description="Voices from professors, CTF teammates, and industry mentors who've seen Siddharth's work up close."
-			className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-			badgeText="Kind words"
+			title="Work Experience"
+			description="Internships across web development, data science, Python, machine learning, and data analytics."
+			badgeText="Experience"
 			badgeIcon={<SLogoIcon aria-hidden="true" size={14} />}
 		>
-			{columns.map((column, columnIndex) => {
-				const animationDuration =
-					animationDurations[columnIndex] ??
-					animationDurations[animationDurations.length - 1];
-				const marqueeStyle = {
-					"--duration": animationDuration,
-				} as CSSProperties;
+			<div className="relative w-full col-span-full">
+				{/* Vertical timeline line */}
+				<div className="absolute left-5 top-0 bottom-0 w-px bg-border hidden sm:block" />
 
-				return (
-					<div
-						key={
-							columnKeys[columnIndex] ?? `testimonials-column-${columnIndex}`
-						}
-						className={cn(
-							"group relative h-112 overflow-hidden p-2",
-							columnVisibility[columnIndex] ?? fallbackVisibility,
-						)}
-					>
-						<Marquee
-							vertical
-							className="h-full [--gap:1rem]"
-							style={marqueeStyle}
-						>
-							{column.map((testimonial, testimonialIndex) => (
-								<TestimonialCard
-									key={`${testimonial.author}-${columnIndex}-${testimonialIndex}`}
-									content={testimonial.content}
-									author={testimonial.author}
-									position={testimonial.position}
-									imageSrc={testimonial.imageSrc}
-								/>
-							))}
-						</Marquee>
-						<div className="pointer-events-none absolute inset-x-0 top-0 h-16 bg-linear-to-b from-background via-background/80 to-transparent" />
-						<div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-linear-to-t from-background via-background/80 to-transparent" />
-					</div>
-				);
-			})}
+				<div className="flex flex-col gap-8">
+					{internships.map((item) => (
+						<div key={item.company} className="relative flex gap-6 sm:gap-10">
+							{/* Timeline dot */}
+							<div className="relative z-10 flex-shrink-0 flex items-start justify-center w-10">
+								<div className="mt-1.5 w-3 h-3 rounded-full bg-primary border-2 border-background shadow-[0_0_8px_2px] shadow-primary/40" />
+							</div>
+
+							{/* Card */}
+							<div className="flex-1 rounded-xl border bg-card p-5 shadow-sm hover:shadow-md transition-shadow">
+								{/* Header */}
+								<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-3">
+									<div>
+										<h3 className="text-base font-semibold text-foreground leading-tight">
+											{item.company}
+										</h3>
+										<p className="text-sm text-primary font-medium">
+											{item.designation} · {item.division}
+										</p>
+									</div>
+									<span className="inline-flex items-center rounded-full border px-3 py-0.5 text-xs font-medium text-muted-foreground whitespace-nowrap self-start sm:self-center">
+										{item.duration}
+									</span>
+								</div>
+
+								{/* Divider */}
+								<div className="border-t mb-3" />
+
+								{/* Work profile */}
+								<p className="text-sm text-muted-foreground leading-relaxed">
+									{item.workProfile}
+								</p>
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
 		</Section>
 	);
 }

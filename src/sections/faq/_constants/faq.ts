@@ -5,6 +5,11 @@ export interface FaqItem {
 
 export const faqItems: FaqItem[] = [
 	{
+		question: "📄 Published Research Paper",
+		answer:
+			"\"AI-POWERED AUTOMATED DATA ANALYTICS DASHBOARD FOR BUSINESS INTELLIGENCE\" — published in the International Journal of Progressive Research in Engineering Management and Science (IJPREMS), Volume 05, Issue 11, November 2025. Paper ID: IJPREMS51100027335.",
+	},
+	{
 		question: "What type of work can I showcase here?",
 		answer:
 			"Use this answer to outline the kind of projects you take on mobile apps, SaaS dashboards, creative campaigns, installations, you name it. Mention the industries or team sizes you typically collaborate with.",

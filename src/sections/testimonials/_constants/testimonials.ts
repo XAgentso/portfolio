@@ -1,44 +1,50 @@
-export interface TestimonialType {
-	content: string;
-	author: string;
-	position: string;
-	imageSrc: string;
+export interface InternshipItem {
+	company: string;
+	division: string;
+	designation: string;
+	duration: string;
+	workProfile: string;
 }
 
-export const testimonials: TestimonialType[] = [
+export const internships: InternshipItem[] = [
 	{
-		content:
-			"Siddharth has an exceptional grasp of machine learning fundamentals. His tumor detection project demonstrated both technical depth and genuine curiosity — exactly the kind of thinking we want to see in future researchers.",
-		author: "Dr. Anjali Mehta",
-		position: "Professor, Computer Science",
-		imageSrc: "/placeholder-2.jpg",
+		company: "1STOP.AI",
+		division: "Web Development (Front-End)",
+		designation: "Intern",
+		duration: "October 2023 – November 2023",
+		workProfile:
+			"Developed responsive and user-friendly web interfaces using HTML, CSS, and JavaScript.",
 	},
 	{
-		content:
-			"Working with Siddharth on our college hackathon project was seamless. He writes clean, well-thought-out code and has a talent for breaking down complex problems into elegant solutions.",
-		author: "Arjun Desai",
-		position: "Tech Lead, DevClub",
-		imageSrc: "/placeholder-2.jpg",
+		company: "Bharat Intern",
+		division: "Data Science",
+		designation: "Intern",
+		duration: "January 2024 – March 2024",
+		workProfile:
+			"Performed data cleaning, exploratory analysis, visualization, and basic predictive modeling using Python.",
 	},
 	{
-		content:
-			"Siddharth's passion for cybersecurity really shows. During our CTF sessions he consistently finds non-obvious solutions and always takes time to explain his thinking to the team.",
-		author: "Priya Nair",
-		position: "CTF Team Captain",
-		imageSrc: "/placeholder-2.jpg",
+		company: "Cognorise Infotech",
+		division: "Python Development",
+		designation: "Technical Intern",
+		duration: "January 2024 – February 2024 (30 Days)",
+		workProfile:
+			"Designed and optimized Python applications using OOP principles and automation techniques.",
 	},
 	{
-		content:
-			"I was genuinely impressed by his DataPulse pipeline — processing real-time streams at that scale as a self-started project is no small feat. This student thinks like an engineer.",
-		author: "Rahul Sharma",
-		position: "Senior Engineer, Infosys",
-		imageSrc: "/placeholder-2.jpg",
+		company: "Prodigy Infotech",
+		division: "Machine Learning",
+		designation: "Intern",
+		duration: "January 2024 (30 Days)",
+		workProfile:
+			"Built, trained, and evaluated machine learning models on structured datasets.",
 	},
 	{
-		content:
-			"Siddharth combines creativity with rigour in a way that's rare for someone at the start of their career. His AI study companion shows he understands both the UX and the ML sides of the problem.",
-		author: "Neha Kulkarni",
-		position: "Mentor, GSSoC",
-		imageSrc: "/placeholder-2.jpg",
+		company: "Meriskill",
+		division: "Data Analysis",
+		designation: "Data Analyst",
+		duration: "January 2024 – February 2024",
+		workProfile:
+			"Analysed data, created dashboards, and generated insights through reports and visualizations.",
 	},
 ];
