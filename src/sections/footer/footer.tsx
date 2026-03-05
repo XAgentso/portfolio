@@ -70,10 +70,10 @@ export default function Footer() {
 			<div className="text-xs text-foreground/70 border-t border-border/80">
 				<div className="w-full md:max-w-5xl mx-auto flex flex-col md:flex-row gap-1 px-4 py-4 md:px-2 items-center justify-between">
 					<p>
-						© {currentYear} Siddharth Singh. Designed &amp; built from Badlapur.
+						© {currentYear} Siddharth Singh. Designed & built from Thane.
 					</p>
 					<p style={{ color: "rgba(196, 181, 253, 0.6)" }}>
-						CS Student · AI/ML · Cybersecurity
+						Full-Stack Developer | AI Enthusiast
 					</p>
 				</div>
 			</div>

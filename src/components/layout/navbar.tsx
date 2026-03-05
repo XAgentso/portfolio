@@ -17,8 +17,8 @@ registerGsapPlugins();
 const NAV_LINKS = [
 	{ label: "Projects", target: "#projects" },
 	{ label: "Works", target: "#works" },
-	{ label: "Showcase", target: "#showcase" },
-	{ label: "Testimonials", target: "#testimonials" },
+	{ label: "Contributions", target: "#contributions" },
+	{ label: "Research", target: "#research" },
 	{ label: "Blog", target: "#blog" },
 	{ label: "Contact", target: "#contact" },
 ] as const;

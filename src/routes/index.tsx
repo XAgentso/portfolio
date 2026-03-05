@@ -5,10 +5,10 @@ import Contact from "@/sections/contact/contact";
 import FAQ from "@/sections/faq/faq";
 import Footer from "@/sections/footer/footer";
 import Hero from "@/sections/hero/hero";
+import Contributions from "@/sections/contributions/contributions";
 import Projects from "@/sections/projects/projects";
+import Research from "@/sections/research/research";
 import Services from "@/sections/services/services";
-import Showcase from "@/sections/showcase/showcase";
-import Testimonials from "@/sections/testimonials/testimonials";
 import Works from "@/sections/works/works";
 
 export const Route = createFileRoute("/")({
@@ -24,8 +24,8 @@ function App() {
 			<Projects />
 			<Services />
 			<Works />
-			<Showcase />
-			<Testimonials />
+			<Contributions />
+			<Research />
 			<FAQ />
 			<Blog posts={posts} />
 			<Contact />

@@ -8,16 +8,9 @@ export interface WorksItem {
 export const works: WorksItem[] = [
 	{
 		image: "/placeholder-1.jpg",
-		title: "NeuralSight — Tumor Detection",
+		title: "Solvex — Skill Constellation Platform",
 		description:
-			"PyTorch CNN classifier for brain MRI scans, 94.2% accuracy on 10k+ sample dataset.",
-		link: "https://github.com/",
-	},
-	{
-		image: "/placeholder-1.jpg",
-		title: "CipherShield — CTF Toolkit",
-		description:
-			"Python library with 40+ cipher modes, hash cracking, and binary analysis for CTF competitions.",
-		link: "https://github.com/",
+			"A MERN-stack developer learning tracker that visualises your skills as a dynamic D3 force-directed constellation. Log learning events, sync GitHub repos, earn XP, and create community learning trails.",
+		link: "https://github.com/XAgentso/Slovex",
 	},
 ];

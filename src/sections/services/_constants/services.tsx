@@ -1,10 +1,7 @@
 import {
-	FigmaLogoIcon,
-	FileIcon,
-	FilePlusIcon,
-	FileTextIcon,
+	CodeIcon,
 	GitHubLogoIcon,
-	PersonIcon,
+	MixIcon,
 } from "@radix-ui/react-icons";
 import type { ReactNode } from "react";
 import { CleanCodeCardContent } from "@/sections/services/_components/clean-code-card-content";
@@ -30,146 +27,146 @@ export interface ServiceFeature {
 const convertingCardIcons: ConvertingCardIconSet = {
 	destination: {
 		id: "client",
-		Icon: PersonIcon,
+		Icon: GitHubLogoIcon,
 	},
 	hub: {
 		id: "handoff",
-		Icon: FigmaLogoIcon,
+		Icon: CodeIcon,
 	},
 	sources: [
 		{
-			id: "brief",
-			Icon: FileTextIcon,
+			id: "react",
+			Icon: MixIcon,
 		},
 		{
-			id: "spec",
-			Icon: FilePlusIcon,
+			id: "node",
+			Icon: CodeIcon,
 		},
 		{
-			id: "assets",
-			Icon: FileIcon,
-		},
-		{
-			id: "repo",
+			id: "mongo",
 			Icon: GitHubLogoIcon,
+		},
+		{
+			id: "d3",
+			Icon: MixIcon,
 		},
 	],
 };
 
 export const serviceItems: ServiceItem[] = [
 	{
-		name: "Service Package 01",
+		name: "Full-Stack Web Development",
 		description:
-			"Swap in the flagship engagement you offer most often — outline the scope, duration, and business outcome.",
+			"End-to-end MERN applications — React + Vite frontends paired with Node.js/Express APIs and MongoDB databases, deployed and production-ready.",
 	},
 	{
-		name: "Service Package 02",
+		name: "Data Visualization & Dashboards",
 		description:
-			"Use this slot for a second offer or retainer tier to highlight how you support different client needs.",
+			"Interactive D3.js force-graphs, constellation maps, and real-time dashboards that turn raw data into compelling, explorable visuals.",
 	},
 	{
-		name: "Dedicated Sprint",
+		name: "AI & ML Integration",
 		description:
-			"Describe a focused two-to-four week collaboration you run to tackle a single feature, redesign, or prototype.",
+			"Embedding ML models and LLMs into web applications — from automated analytics pipelines to intelligent recommendation engines.",
 	},
 	{
-		name: "Advisory Session",
+		name: "REST API Design",
 		description:
-			"Note how teams can book strategy calls, technical audits, or office hours when they need a quick unblock.",
+			"Scalable, well-documented REST APIs with Express.js, JWT authentication, and MongoDB — built for reliability and easy integration.",
 	},
 	{
-		name: "Launch Support",
+		name: "Climate & Geospatial Dashboards",
 		description:
-			"Explain the handoff, QA, and deployment support you bring during product launches or campaign pushes.",
+			"Mapping solutions using Leaflet and public data APIs (NASA POWER, RainViewer) to visualise geographic and environmental datasets.",
 	},
 	{
-		name: "Optimization Pass",
+		name: "Research & Technical Writing",
 		description:
-			"Reserve this line for performance, accessibility, or UX audits that keep shipped work feeling polished.",
+			"Published researcher in AI-driven analytics (IJPREMS). Available for academic collaboration, technical documentation, and whitepaper authoring.",
 	},
 	{
-		name: "Systems Audit",
+		name: "UI/UX Engineering",
 		description:
-			"Call out any platform review, stack migration, or modernization work that keeps teams prepared for scale.",
+			"Pixel-perfect interfaces with Framer Motion animations, Zustand state management, and Valorant-inspired dark design systems.",
 	},
 ];
 
 export const bestPractices: ServiceItem[] = [
 	{
-		name: "Principle 01 — Lead With Outcomes",
+		name: "Component-Driven Architecture",
 		description:
-			"A quick reminder to mention the measurable change you bring, not just the toolset you use to get there.",
+			"Every project is built with reusable, composable React components — clean separation of concerns from day one.",
 	},
 	{
-		name: "Principle 02 — Keep Teams In The Loop",
+		name: "Type-Safe Codebase",
 		description:
-			"Suggest how you handle weekly updates, async notes, or Loom recaps so clients know exactly what's moving.",
+			"End-to-end TypeScript on both client and server — fewer runtime bugs, better DX, and confident refactoring.",
 	},
 	{
-		name: "Principle 03 — Design For Handoff",
+		name: "Performance First",
 		description:
-			"Explain how you package deliverables, documentation, or recordings so work is easy to extend later on.",
+			"Lazy loading, code splitting, and optimised D3 render loops to keep apps fast even with heavy data payloads.",
 	},
 	{
-		name: "Principle 04 — Prototype Early",
+		name: "GitHub-Driven Workflow",
 		description:
-			"Encourage readers to reference the prototypes, sandboxes, or experiments you typically run up front.",
+			"Feature branches, meaningful commit messages, and PR-based reviews — repositories that are easy to pick up and extend.",
 	},
 	{
-		name: "Principle 05 — Sweat The Details",
+		name: "Responsive & Accessible UI",
 		description:
-			"Use this space to note your obsession with accessibility, polish, or animation that sets you apart.",
+			"Designs that work on every screen size and meet accessibility standards so no user is left behind.",
 	},
 	{
-		name: "Principle 06 — Build For Change",
+		name: "Secure by Default",
 		description:
-			"Remind teams that you keep architecture flexible, future-friendly, and ready for whatever V2 demands.",
+			"JWT auth, environment variable discipline, hashed credentials, and input validation baked into every API.",
 	},
 	{
-		name: "Principle 07 — Document The Journey",
+		name: "Data-Driven Decisions",
 		description:
-			"Point to how you capture learnings, write internal notes, or ship looms that demystify key decisions.",
+			"Leveraging real datasets, NASA APIs, and GitHub activity to surface meaningful insights rather than demo data.",
 	},
 	{
-		name: "Principle 08 — Test Relentlessly",
+		name: "Iterative & Agile",
 		description:
-			"Reserve this bullet for your preferred QA cadence, tooling, or review rituals before anything ships.",
+			"Ship a working MVP fast, gather feedback, then iterate — keeping scope tight and momentum high.",
 	},
 	{
-		name: "Principle 09 — Collaborate Openly",
+		name: "AI-Augmented Development",
 		description:
-			"Call out the cadence of workshops, office hours, or async standups you host with product partners.",
+			"Using LLM tooling and prompt engineering to accelerate boilerplate, docs, and data-preprocessing tasks.",
 	},
 	{
-		name: "Principle 10 — Iterate After Launch",
+		name: "Thorough Documentation",
 		description:
-			"Highlight how you stay close to analytics, user feedback, or retention data to plan the next release.",
+			"README files, inline comments, and architecture notes that make every project easy to hand off or revisit.",
 	},
 ];
 
 export const serviceFeatures: ServiceFeature[] = [
 	{
-		name: "Service Overview",
+		name: "What I Build",
 		description:
-			"Swap in a short blurb that explains what types of projects you take on and how clients can engage.",
+			"Full-stack web apps, AI-powered dashboards, and data visualisations — built with the MERN stack and modern tooling.",
 		href: "#",
 		className: "col-span-1",
 		background: <ServicesCardContent items={serviceItems} />,
 	},
 
 	{
-		name: "From Design To Build",
+		name: "Idea to Deployment",
 		description:
-			"Use this tile to describe how you translate Figma boards, decks, or briefs into production-ready work.",
+			"From wireframe to live URL — I take projects through design, development, API integration, and production deployment.",
 		href: "#",
 		className: "col-span-1",
 		background: <ConvertingCardContent icons={convertingCardIcons} />,
 	},
 
 	{
-		name: "Code Standards",
+		name: "How I Work",
 		description:
-			"Outline the engineering values, review rituals, or guardrails that keep your work maintainable.",
+			"Engineering principles I follow on every project to keep code clean, scalable, and a joy to maintain.",
 		href: "#",
 		className: "col-span-1",
 		background: <CleanCodeCardContent items={bestPractices} />,

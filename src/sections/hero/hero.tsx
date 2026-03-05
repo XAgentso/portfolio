@@ -195,7 +195,7 @@ export default function Hero() {
 				<div style={{ visibility: "hidden" }} ref={badgeRef} className="w-fit">
 					<ShinyBadge>
 						<SLogoIcon aria-hidden="true" size={14} />
-						CS Student · AI/ML · Cybersecurity
+						Full-Stack Developer | AI Enthusiast
 					</ShinyBadge>
 				</div>
 				<h1
