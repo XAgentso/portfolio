@@ -13,4 +13,11 @@ export const works: WorksItem[] = [
 			"A MERN-stack developer learning tracker that visualises your skills as a dynamic D3 force-directed constellation. Log learning events, sync GitHub repos, earn XP, and create community learning trails.",
 		link: "https://github.com/XAgentso/Slovex",
 	},
+	{
+		image: "/placeholder-2.jpg",
+		title: "DEVForge Network — AI Collaboration Hub",
+		description:
+			"A full-stack developer network with a 'Clear UI' aesthetic. Features real-time multiplayer code editing environments with integrated live Google Gemini AI Code Review and Consultation.",
+		link: "https://github.com/XAgentso/DEVForge",
+	},
 ];

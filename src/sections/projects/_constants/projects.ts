@@ -9,6 +9,15 @@ export interface ProjectItem {
 
 export const projects: ProjectItem[] = [
 	{
+		image: "/placeholder-2.jpg",
+		title: "DEVForge Network — AI Collaboration Hub",
+		description:
+			"A full-stack collaboration platform featuring a sleek 'Clear UI' aesthetic. Integrates a Live Gemini Consultant, dynamic Developer Profiles with GitHub stats sync, an AI Code Review Engine, and real-time multiplayer code editing environments using Socket.io and Monaco.",
+		techStack: ["React", "Vite", "Google Gemini AI", "Socket.io", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+		deployedUrl: "https://github.com/XAgentso/DEVForge",
+		githubUrl: "https://github.com/XAgentso/DEVForge",
+	},
+	{
 		image: "/placeholder-1.jpg",
 		title: "Solvex — Skill Constellation Platform",
 		description:
