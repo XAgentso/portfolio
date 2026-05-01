@@ -10,6 +10,15 @@ export interface ProjectItem {
 export const projects: ProjectItem[] = [
 	{
 		image: "/placeholder-2.jpg",
+		title: "Antigravity Marketplace",
+		description:
+			"A full-stack multi-vendor marketplace tailored for the Indian market. It features robust seller dashboards, comprehensive product and order management, and a secure transactional loop integrated with Razorpay. Built with modern web technologies, it includes real-time notifications via Socket.io and utilizes Prisma with PostgreSQL for reliable data management.",
+		techStack: ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Prisma", "Razorpay", "Socket.io", "Tailwind CSS"],
+		deployedUrl: "https://github.com/XAgentso/Antigravity-Marketplace",
+		githubUrl: "https://github.com/XAgentso/Antigravity-Marketplace",
+	},
+	{
+		image: "/placeholder-2.jpg",
 		title: "DEVForge Network — AI Collaboration Hub",
 		description:
 			"A full-stack collaboration platform featuring a sleek 'Clear UI' aesthetic. Integrates a Live Gemini Consultant, dynamic Developer Profiles with GitHub stats sync, an AI Code Review Engine, and real-time multiplayer code editing environments using Socket.io and Monaco.",

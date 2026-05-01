@@ -7,6 +7,13 @@ export interface WorksItem {
 
 export const works: WorksItem[] = [
 	{
+		image: "/placeholder-2.jpg",
+		title: "Antigravity Marketplace",
+		description:
+			"A full-stack multi-vendor marketplace featuring robust seller dashboards, comprehensive product/order management, and a secure transactional loop integrated with Razorpay for the Indian market.",
+		link: "https://github.com/XAgentso/Antigravity-Marketplace",
+	},
+	{
 		image: "/placeholder-1.jpg",
 		title: "Solvex — Skill Constellation Platform",
 		description:
