@@ -15,10 +15,11 @@ import { cn } from "@/lib/utils";
 registerGsapPlugins();
 
 const NAV_LINKS = [
+	{ label: "Research", target: "#research" },
 	{ label: "Projects", target: "#projects" },
+	{ label: "Services", target: "#services" },
 	{ label: "Works", target: "#works" },
 	{ label: "Contributions", target: "#contributions" },
-	{ label: "Research", target: "#research" },
 	{ label: "Blog", target: "#blog" },
 	{ label: "Contact", target: "#contact" },
 ] as const;

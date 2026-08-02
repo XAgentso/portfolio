@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { getAllPostsMeta } from "@/sections/blog/_server/posts";
 import Blog from "@/sections/blog/blog";
 import Contact from "@/sections/contact/contact";
-import FAQ from "@/sections/faq/faq";
 import Footer from "@/sections/footer/footer";
 import Hero from "@/sections/hero/hero";
 import Contributions from "@/sections/contributions/contributions";
@@ -21,12 +20,11 @@ function App() {
 	return (
 		<main className="mx-auto flex flex-col items-center justify-start w-full md:w-7xl md:border-x border-border divide-y divide-border/80">
 			<Hero />
+			<Research />
 			<Projects />
 			<Services />
 			<Works />
 			<Contributions />
-			<Research />
-			<FAQ />
 			<Blog posts={posts} />
 			<Contact />
 			<Footer />

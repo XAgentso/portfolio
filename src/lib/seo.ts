@@ -37,7 +37,7 @@ export type BlogSeoPayload = {
 	date?: string;
 };
 
-const SITE_URL = "https://xagentso.github.io";
+const SITE_URL = "https://siddharthsingh.online";
 const SITE_NAME = "Siddharth Singh";
 const DEFAULT_TITLE = "Siddharth Singh — Future Tech Innovator";
 const DEFAULT_DESCRIPTION =

@@ -23,7 +23,7 @@ export default function Projects() {
                     }}
                 >
                     <SLogoIcon size={14} aria-hidden="true" />
-                    Live Deployed
+                    Featured Work
                 </div>
 
                 <h2
@@ -38,7 +38,7 @@ export default function Projects() {
                 >
                     AI systems, security tools, and data pipelines built while studying
                     at{" "}
-                    <span style={{ color: "#a78bfa" }}>New Delhi</span> — each
+                    <span style={{ color: "#a78bfa" }}>Roorkee</span> — each
                     one a step toward the frontier.
                 </p>
             </div>

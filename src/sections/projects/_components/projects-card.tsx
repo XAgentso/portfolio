@@ -11,6 +11,7 @@ export default function ProjectsCard({
     techStack,
     deployedUrl,
     githubUrl,
+    statusLabel,
 }: ProjectsCardProps) {
     const cardRef = useRef<HTMLDivElement>(null);
 
@@ -80,6 +81,19 @@ export default function ProjectsCard({
 
             {/* Content */}
             <div className="p-5 flex flex-col gap-3">
+                {statusLabel && (
+                    <div
+                        className="inline-flex self-start rounded-full px-2.5 py-1 text-[10px] font-medium uppercase tracking-[0.2em]"
+                        style={{
+                            background: "rgba(167, 139, 250, 0.12)",
+                            border: "1px solid rgba(167, 139, 250, 0.22)",
+                            color: "rgba(196, 181, 253, 0.9)",
+                        }}
+                    >
+                        {statusLabel}
+                    </div>
+                )}
+
                 <h3
                     className="text-base font-semibold leading-snug"
                     style={{ color: "#f5f3ff" }}

@@ -5,6 +5,7 @@ export interface ProjectItem {
 	techStack: string[];
 	deployedUrl: string;
 	githubUrl?: string;
+	statusLabel?: "Live Deployed" | "Open Source" | "In Development";
 }
 
 export const projects: ProjectItem[] = [
@@ -16,6 +17,7 @@ export const projects: ProjectItem[] = [
 		techStack: ["React", "Vite", "Node.js", "Express", "PostgreSQL", "Prisma", "Razorpay", "Socket.io", "Tailwind CSS"],
 		deployedUrl: "https://github.com/XAgentso/Antigravity-Marketplace",
 		githubUrl: "https://github.com/XAgentso/Antigravity-Marketplace",
+		statusLabel: "Open Source",
 	},
 	{
 		image: "/placeholder-2.jpg",
@@ -25,6 +27,7 @@ export const projects: ProjectItem[] = [
 		techStack: ["React", "Vite", "Google Gemini AI", "Socket.io", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
 		deployedUrl: "https://github.com/XAgentso/DEVForge",
 		githubUrl: "https://github.com/XAgentso/DEVForge",
+		statusLabel: "Open Source",
 	},
 	{
 		image: "/placeholder-1.jpg",
@@ -34,6 +37,7 @@ export const projects: ProjectItem[] = [
 		techStack: ["React", "Vite", "D3.js", "Node.js", "Express", "MongoDB", "Framer Motion", "Zustand"],
 		deployedUrl: "https://github.com/XAgentso/Slovex",
 		githubUrl: "https://github.com/XAgentso/Slovex",
+		statusLabel: "In Development",
 	},
 	{
 		image: "/weather-app.png",
@@ -43,5 +47,6 @@ export const projects: ProjectItem[] = [
 		techStack: ["React", "Vite", "NASA POWER", "RainViewer", "Leaflet", "CSS"],
 		deployedUrl: "https://github.com/XAgentso/Weather-app",
 		githubUrl: "https://github.com/XAgentso/Weather-app",
+		statusLabel: "In Development",
 	},
 ];
